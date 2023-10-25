@@ -3,7 +3,7 @@ FROM rust:latest as builder
 
 WORKDIR /app
 
-COPY Cargo.toml Cargo.lock ./
+COPY Cargo.toml ./
 RUN mkdir src
 COPY src/ src/
 
